@@ -46,7 +46,7 @@
 
   const button = document.createElement("button")
   button.textContent = "COPY TSV"
-  document.body.prepend(button)
+  document.body.append(button)
 
   button.onclick = async () => {
     const rawRows = parse()
