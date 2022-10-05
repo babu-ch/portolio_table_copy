@@ -2,7 +2,7 @@
 
 〇フーホ〇ートフォリオのテーブルをTSVに変換するtampermonkeyの拡張
 
-# install
+# 使い方
 
 1. install tampermonkey
 
@@ -19,6 +19,8 @@ install!
 ![image](https://user-images.githubusercontent.com/42715882/194006341-64db31ac-d420-47d4-b763-04391607893e.png)
 
 4. ページの一番左下にCOPY TSV的なボタンがあるのでクリッコ
+
+かなり控え目な子ですね、たぶん人見知りのボタン
 
 ![image](https://user-images.githubusercontent.com/42715882/194006466-66d678ad-0877-476f-8e97-eb6d6a60791a.png)
 
