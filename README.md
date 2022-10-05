@@ -1,6 +1,6 @@
 # portolio_table_copy
 
-〇フーホ〇ートフォリオのテーブルをTSVに変換するtampermonkeyの拡張
+〇フーホ〇ートフォリオのテーブルをTSVとしてコピーするtampermonkeyの拡張
 
 # 使い方
 
