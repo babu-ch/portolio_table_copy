@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        portfolio table to tsv
+// @name        portofolio table to tsv
 // @namespace    http://tampermonkey.net/
 // @version      0.3
 // @description  try to take over the world!
