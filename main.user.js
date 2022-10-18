@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name        portofolio table to tsv
+// @name        portfolio table to tsv
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  try to take over the world!
 // @author       babu-ch
 // @match        https://finance.yahoo.co.jp/portfolio/*
@@ -47,8 +47,12 @@
       // コード・市場・名称は分割して追加
       const codes = row[codeIndex].split("\n")
       row.splice(codeIndex, 1, codes[0], codes[1], codes[2]);
+
+      // 先頭に+があると数式エラーになるので取る
+      // ソートの邪魔になる無駄な文字も消す
+      const replaceRegex = /(^\+|\([連単]\))|(?<=[\d.]+)[倍株]$/;
       const newRow = row.map(col => col.split("\n")[0]) // \nでsplitするのは２行目以降が無駄な情報のため
-        .map(col => col.replace(/^\+/, "")) // 先頭に+があると数式エラーになるので取る
+        .map(col => col .replace(replaceRegex, ""))
       newTable.push(newRow)
     })
     return newTable;
